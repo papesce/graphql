@@ -5,15 +5,15 @@ service: hackernews-node
 stage: dev
 
 # to disable authentication:
-# disableAuth: true
-secret: mysecret123
+disableAuth: true
+# secret: mysecret123
 
 # the file path pointing to your data model
 datamodel: datamodel.graphql
 
 # uncomment the following two lines to seed your service with initial data
-seed:
-  import: seed.graphql
+# seed:
+#  import: seed.graphql
 
 # cluster: public-autumnmistress-326/prisma-eu1
 # cluster: local

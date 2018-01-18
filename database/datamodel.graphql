@@ -6,6 +6,7 @@
 # }
 
 type Vote {
+   id: ID! @unique
    user: User!
    link: Link!
 }
@@ -25,5 +26,6 @@ type Link {
   url: String!
   postedBy: User
   votes: [Vote!]!
+  createdAt: DateTime!
 }
 
